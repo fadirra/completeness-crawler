@@ -64,7 +64,7 @@ public class Crawler {
 				
 				sroffset = sroffset + srlimit;
 				allSearchResults = concatArray(allSearchResults, searchArray);
-				shouldWeStop = apiCall.getBody().getObject().isNull("continue");
+				shouldWeStop = apiCall.getBody().getObject().isNull("continue"); // check if there is still another page/offset of results
 				
 			}
 			
